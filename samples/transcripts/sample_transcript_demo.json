@@ -1,0 +1,123 @@
+{
+  "session_id": "sample_demo_001",
+  "candidate_name": "Priya Sharma",
+  "start_time": "2025-09-18T14:00:00",
+  "end_time": "2025-09-18T14:23:00",
+  "questions_asked": [
+    "How would you make text in a cell appear bold and increase the font size to 14? Walk me through the steps.",
+    "I want to find the highest value in a column of numbers from B1 to B15. What function should I use?",
+    "Explain how you would create a PivotTable to summarize sales data by region and product category. What are the key steps?",
+    "Create a dynamic formula that combines INDEX and MATCH to lookup a value. Explain why this is sometimes better than VLOOKUP and provide an example.",
+    "I have a table with employee names in column A and their salaries in column B. I want to look up 'John Smith' and return his salary. How would you do this using a lookup function?",
+    "Calculate the total sales for the month with data in cells A1 through A10. What Excel formula would you use and why?"
+  ],
+  "answers": [
+    {
+      "question_id": "1",
+      "response": "I'd click the cell, then click the Bold button (or Ctrl+B). To increase font, use the font size dropdown in the Home tab and select 14.",
+      "timestamp": "2025-09-18T14:02:10"
+    },
+    {
+      "question_id": "2",
+      "response": "I'd use the MAX function: =MAX(B1:B15). It finds the highest value in the range.",
+      "timestamp": "2025-09-18T14:04:30"
+    },
+    {
+      "question_id": "3",
+      "response": "First select the sales data range, go to Insert, click PivotTable. In the new sheet, drag 'Region' to Rows, 'Product Category' to Columns, and 'Sales' to Values. This summarizes sales by region and product.",
+      "timestamp": "2025-09-18T14:08:15"
+    },
+    {
+      "question_id": "4",
+      "response": "Use: =INDEX(C2:C10, MATCH(\"ABC\", B2:B10, 0)). INDEX/MATCH works even if the lookup value is left of the return column, unlike VLOOKUP which requires lookup to be leftmost.",
+      "timestamp": "2025-09-18T14:11:20"
+    },
+    {
+      "question_id": "5",
+      "response": "I would use VLOOKUP: =VLOOKUP(\"John Smith\", A:B, 2, FALSE). This finds 'John Smith' in column A and returns his salary from column B.",
+      "timestamp": "2025-09-18T14:14:05"
+    },
+    {
+      "question_id": "6",
+      "response": "To get total sales, use the SUM function: =SUM(A1:A10). It adds all values between A1 and A10 together.",
+      "timestamp": "2025-09-18T14:16:10"
+    }
+  ],
+  "evaluations": [
+    {
+      "question_id": "1",
+      "accuracy_score": 0.95,
+      "explanation_score": 0.9,
+      "efficiency_score": 0.9,
+      "score": 9.2,
+      "feedback": "Excellent! You clearly described both bold and font sizing, and referenced keyboard shortcuts and UI navigation.",
+      "strengths": ["accurate steps", "reference to toolbar and shortcuts"],
+      "improvement_areas": []
+    },
+    {
+      "question_id": "2",
+      "accuracy_score": 0.95,
+      "explanation_score": 0.85,
+      "efficiency_score": 0.88,
+      "score": 8.9,
+      "feedback": "Correct use of MAX function; answer is precise and shows formula syntax.",
+      "strengths": ["formula accuracy", "succinct explanation"],
+      "improvement_areas": ["Could mention alternate functions like LARGE for broader context"]
+    },
+    {
+      "question_id": "3",
+      "accuracy_score": 0.9,
+      "explanation_score": 0.88,
+      "efficiency_score": 0.85,
+      "score": 8.7,
+      "feedback": "Strong step-by-step description of PivotTable creation and field arrangement.",
+      "strengths": ["clear process", "field selection logic"],
+      "improvement_areas": ["Could note filter options for extra credit"]
+    },
+    {
+      "question_id": "4",
+      "accuracy_score": 0.95,
+      "explanation_score": 0.9,
+      "efficiency_score": 0.9,
+      "score": 9.4,
+      "feedback": "Great example of using INDEX/MATCH and clear justification for preferring it over VLOOKUP.",
+      "strengths": ["dynamic formula", "reference to flexibility"],
+      "improvement_areas": []
+    },
+    {
+      "question_id": "5",
+      "accuracy_score": 0.85,
+      "explanation_score": 0.8,
+      "efficiency_score": 0.85,
+      "score": 8.2,
+      "feedback": "Correct formula and explanation; could mention risks if names are not unique.",
+      "strengths": ["accurate approach", "understanding of VLOOKUP syntax"],
+      "improvement_areas": ["Mention handling of duplicate names"]
+    },
+    {
+      "question_id": "6",
+      "accuracy_score": 0.98,
+      "explanation_score": 0.9,
+      "efficiency_score": 0.9,
+      "score": 9.3,
+      "feedback": "Perfect use of SUM and clear explanation of purpose.",
+      "strengths": ["technical accuracy", "clarity of reasoning"],
+      "improvement_areas": []
+    }
+  ],
+  "interview_completed": true,
+  "final_summary": {
+    "overall_score": 8.95,
+    "performance_level": "Advanced",
+    "strengths": [
+      "Consistently accurate and detailed answers",
+      "Excellent reasoning and explanation",
+      "Demonstrated advanced Excel formula knowledge"
+    ],
+    "areas_for_growth": [
+      "Consider edge cases and broader context in explanations (e.g., duplicate names, alternative functions)",
+      "Practice mentioning more advanced summary/filter options in PivotTables"
+    ],
+    "ai_feedback": "Outstanding interview, Priya! Your Excel skills are strong across all areas assessed. For even higher scores, add brief notes on exceptions/corner cases and advanced tips. You are well prepared for data-driven tasks in Finance or Analytics roles."
+  }
+}
