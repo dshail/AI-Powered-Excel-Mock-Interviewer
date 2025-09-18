@@ -1,0 +1,4 @@
+mkdir -p data/transcripts data/questions data/rubrics
+touch data/transcripts/.gitkeep
+touch data/questions/.gitkeep  
+touch data/rubrics/.gitkeep
